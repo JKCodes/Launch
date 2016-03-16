@@ -1,0 +1,48 @@
+1) a method that returns the sum of two integers
+
+START
+
+# Given two numbers called number1 and number2
+
+number1 formatted to an integer + number2 formatted to an integer
+
+END
+
+
+2) a method that takes an array of strings, and returns a string that is all those strings concatenated together
+
+START
+
+# Given an array of strings
+
+Return if array is nil or is empty
+
+SET iterator = 0
+SET result = '' 
+
+WHILE iterator < length of array
+  result += string at array at index iterator
+  iterator += 1
+
+return result
+
+END
+
+3) a method that takes an array of integers, and returns a new array with every other element
+
+START
+
+# Given an array of integers
+
+Return if array is nil or is empty
+
+SET iterator = 0
+SET result = []
+
+WHILE iterator < length of array
+  push the value at index iterator to the array
+  iterator +=2
+
+return result
+
+END

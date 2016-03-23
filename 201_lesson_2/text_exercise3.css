@@ -1,0 +1,18 @@
+body {
+  font-size: 18px;
+}
+
+mark {
+  font-family: monospace;
+  font-size: 12px;
+}
+
+
+strong {
+  font-size: 15px;
+}
+
+em {
+  font-size: 20px;
+  text-transform: uppercase;
+}

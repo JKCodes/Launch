@@ -1,0 +1,16 @@
+body {
+  font: normal 14px Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: Georgia, serif;
+}
+
+p {
+  line-height: 150%;
+}
+
+code {
+  font-style: italic;
+  text-decoration: underline;
+}

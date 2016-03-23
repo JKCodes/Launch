@@ -1,0 +1,25 @@
+img {
+  display: block;
+  width: 100%
+  min-width: 500px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+div {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+}
+
+#red {
+  padding: 20px;
+  background: #ffcccc;
+}
+
+#blue {
+  background: #ccccff;
+  border: 2px solid black;
+}
+

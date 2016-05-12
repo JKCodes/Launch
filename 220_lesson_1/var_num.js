@@ -1,0 +1,18 @@
+var numerator = 10;
+var denomintaor = 2;
+var answer = numerator / denomintaor;
+console.log(answer);
+var incrementer = 1;
+var start = incrementer;
+var end, difference;
+incrementer += 1;
+incrementer += 1;
+incrementer += 1;
+incrementer++;
+incrementer++;
+var end = incrementer;
+var difference = end - start;
+console.log(end);
+console.log(difference);
+answer = (11 + 31) * 3;
+console.log(answer);

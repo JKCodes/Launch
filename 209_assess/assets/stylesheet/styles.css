@@ -1,0 +1,289 @@
+@import url("reset.css");
+body {
+  min-width: 600px;
+  max-width: 1200px;
+  font: 16px Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+aside {
+  width: 335px;
+  float: left;
+  background: #464f77;
+  padding: 60px 0 225px 0;
+}
+
+aside li {
+  position: relative;
+  padding: 12px 33px 12px 135px;
+}
+
+aside a {
+  color: #a3a7bb;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.completed h2 {
+  color: #fff;
+}
+
+h2:before {
+  position: absolute;
+  top: 8px;
+  left: 100px;
+  content: url("../images/icon_todos.png");
+  padding-right: 10px;
+}
+
+.completed h2:before {
+  content: url("../images/icon_completed.png");
+}
+
+
+aside p {
+  position: absolute;
+  font-size: 14px;
+  top: 12px;
+  right: 33px;
+  color: #c4c7d3;
+  padding: 1px 4px;
+  border: 1px solid #6b7292;
+  background: #6b7292;
+  border-radius: 11px;
+  box-sizing: border-box;
+}
+
+.active {
+  background: #383f5f;
+  color: #f2f2f4;
+}
+
+.active p {
+  background: #148fd5;
+  color: #fff;
+}
+
+aside ul:last-child li {
+  text-decoration: line-through;
+}
+
+aside ul:last-child a:first-child li {
+  text-decoration: none;
+  padding-bottom: 17px;
+}
+
+
+aside ul:first-child {
+  margin-bottom: 43px;
+}
+
+content h1 span {
+  position: absolute;
+  font-size: 14px;
+  top: 72px;
+  left: 103px;
+  padding: 1px 4px;
+  border: 1px solid #148fd5;
+  background: #148fd5;
+  color: #fff;
+  border-radius: 11px;
+  box-sizing: border-box;
+}
+
+h3 {
+  position: relative;
+  font-size: 16px;
+  margin-left: 335px;
+  padding: 20px 0 15px 55px;
+  color: #148fd5;
+  font-weight: normal;
+}
+
+h3:before {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  content: url("../images/icon_plus.png");
+  padding-right: 15px;
+}
+
+h1 {
+  position: relative;
+  font-size: 21px;
+  font-weight: normal;
+  margin-left: 335px;
+  padding: 71px 0 17px 30px;
+}
+
+.menu {
+  visibility: hidden;
+  cursor: pointer;
+  padding: 20px 20px 28px 30px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + label {
+  position: absolute;
+  top: 0px;
+  left: 335px;
+  z-index: 1;
+}
+
+#menu-toggle:checked ~ aside {
+  display: block;
+}
+
+#menu-toggle:checked ~ content h1,
+#menu-toggle:checked ~ content h3,
+#menu-toggle:checked ~ content .list_items {
+  margin-left: 335px;
+}
+
+.list_items {
+  margin-left: 335px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.list_items > li {
+  border-top: 1px solid #e7e7e7;
+  padding: 16px 0 16px 10px;
+}
+
+content ul li img {
+  padding-right: 3px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.list_items li > label:hover {
+  cursor: pointer;
+  color: #148fd5;
+}
+
+.todo_update {
+  display: none;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: #cfcfcf;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  height: 35px;
+  width: 395px;
+  margin: 0 0 25px 75px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+input[type="number"] {
+  font-size: 16px;
+  height: 35px;
+  width: 121px;
+  margin: 0 0 25px 0;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+input[type="number"]:first-child {
+  margin: 0 0 25px 34px;
+}
+
+textarea {
+  font-size: 16px;
+  height: 145px;
+  width: 395px;
+  resize: none;
+  margin: 0 0 25px 115px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  font-size: 16px;
+  background: #148fd5;
+  border: 1px solid #148fd5;
+  color: #fff;
+  width: 180px;
+  margin-left: 20px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 5px;
+}
+
+input[type="submit"]:first-child {
+  margin-left: 115px;
+}
+
+input:checked + .todo_update {
+  display: block;
+  color: #484848;
+  border: 1px solid #e7e7e7; 
+  position: absolute;
+  background: #fff;
+  top: 110px;
+  left: 440px;
+  width: 575px;
+  height: 343px;
+  padding: 30px 40px 40px 40px;
+  z-index: 2;
+}
+
+span {
+  position: absolute; 
+}
+
+.trash {
+  float: right;
+}
+
+@media (max-width: 768px) {
+  aside {
+    display: none;
+  }
+
+  .menu {
+    visibility: visible;
+  }
+
+  h1, h3, .list_items {
+    margin-left: 0;
+  }
+
+  input:checked + .todo_update {
+    display: block;
+    color: #484848;
+    border: 1px solid #e7e7e7; 
+    position: absolute;
+    background: #fff;
+    top: 25px;
+    left: 25px;
+    width: 575px;
+    height: 343px;
+    padding: 30px 40px 40px 40px;
+    z-index: 2;
+  }
+}

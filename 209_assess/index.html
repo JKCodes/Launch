@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+  <html lang="en-US">
+  <head>
+    <title>Todos</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/stylesheet/styles.css" />
+  </head>
+  <body>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle">
+        <img class="menu" src="assets/images/icon_menu.png" alt="Menu" />
+      </label>    
+      
+      <aside>
+        <ul>
+          <a href="#">
+            <li class="all_todos">
+              <h2>All Todos</h2>
+              <p>18</p>
+            </li>
+          </a>
+          <a href="#">
+            <li class="active">
+              02/16
+              <p>8</p>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              03/16
+              <p>2</p>
+            </li>
+          </a>        
+          <a href="#">
+            <li>
+              04/16
+              <p>1</p>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              05/16
+              <p>1</p>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              06/16
+              <p>6</p>
+            </li>
+          </a>
+        </ul>
+
+        <ul>
+          <a href="#">
+            <li class="completed">
+              <h2>Completed</h2>
+            </li>
+          </a>
+          <a href="#">
+            <li>02/15</li>
+          </a>
+          <a href="#">
+            <li>03/15</li>
+          </a>
+          <a href="#">
+            <li>04/15</li>
+          </a>
+          <a href="#">
+            <li>05/15</li>
+          </a>
+          <a href="#">
+            <li>06/14</li>
+          </a>
+        </ul>
+      </aside>
+      <content>
+        <h1>02/16<span>8</span></h1>
+        <h3>Add new to do</h3>
+        <ul class="list_items">
+          <li>
+            <img src="assets/images/icon_unchecked_box.png" alt="box" />
+            <label>
+              <input type="checkbox" name="todo_item1" />
+              Item 1
+              <div class="todo_update">
+                <form action="" method="post">
+                  <fieldset>
+                    <ul>
+                      <li>
+                        <label>
+                          Title
+                          <input type="text" name="title" value ="Item 1" />
+                        </label>
+                      </li>
+                      <li>
+                        Due Date
+                        <input type="number" name="day" value="16" />
+                        /
+                        <input type="number" name="month" placeholder="Month" />
+                        /
+                        <input type="number" name="year" placeholder="Year" />
+                      </li>
+                      <li>
+                          <span>Description</span>
+                          <textarea name="description" placeholder="Description"></textarea>
+                      </li>
+                      <li>
+                        <input type="submit" value="Save" />
+                        <input type="submit" value="Mark As Complete" />
+                      </li>
+                    </ul>
+                  </fieldset>
+                </form>
+              </div>
+              <img class="trash" src="assets/images/icon_trash.png" />
+            </label>
+          </li>
+          <li>
+            <img src="assets/images/icon_unchecked_box.png" alt="box" />
+            <label>
+              <input type="checkbox" name="todo_item2" />
+              Item 2
+              <div class="todo_update">
+                <form action="" method="post">
+                  <fieldset>
+                    <ul>
+                      <li>
+                        <label>
+                          Title
+                          <input type="text" name="title" value ="Item 2" />
+                        </label>
+                      </li>
+                      <li>
+                        Due Date
+                        <input type="number" name="day" value="16" />
+                        /
+                        <input type="number" name="month" placeholder="Month" />
+                        /
+                        <input type="number" name="year" placeholder="Year" />
+                      </li>
+                      <li>
+                          <span>Description</span>
+                          <textarea name="description" placeholder="Description"></textarea>
+                      </li>
+                      <li>
+                        <input type="submit" value="Save" />
+                        <input type="submit" value="Mark As Complete" />
+                      </li>
+                    </ul>
+                  </fieldset>
+                </form>
+              </div>
+              <img class="trash" src="assets/images/icon_trash.png" />
+            </label>
+          </li>
+          <li class="checked">
+            <img src="assets/images/icon_checked_box.png" alt="box" />
+            <label>
+              <input type="checkbox" name="todo_item3" />
+              Item 3
+              <div class="todo_update">
+                <form action="" method="post">
+                  <fieldset>
+                    <ul>
+                      <li>
+                        <label>
+                          Title
+                          <input type="text" name="title" value ="Item 3" />
+                        </label>
+                      </li>
+                      <li>
+                        Due Date
+                        <input type="number" name="day" value="16" />
+                        /
+                        <input type="number" name="month" placeholder="Month" />
+                        /
+                        <input type="number" name="year" placeholder="Year" />
+                      </li>
+                      <li>
+                          <span>Description</span>
+                          <textarea name="description" placeholder="Description"></textarea>
+                      </li>
+                      <li>
+                        <input type="submit" value="Save" />
+                        <input type="submit" value="Mark As Complete" />
+                      </li>
+                    </ul>
+                  </fieldset>
+                </form>
+              </div>
+              <img class="trash" src="assets/images/icon_trash.png" />
+            </label>
+          </li>
+          <li class="checked">
+            <img src="assets/images/icon_checked_box.png" alt="box" />
+            <label>
+              <input type="checkbox" name="todo_item4" />
+              Item 4
+              <div class="todo_update">
+                <form action="" method="post">
+                  <fieldset>
+                    <ul>
+                      <li>
+                        <label>
+                          Title
+                          <input type="text" name="title" value ="Item 4" />
+                        </label>
+                      </li>
+                      <li>
+                        Due Date
+                        <input type="number" name="day" value="16" />
+                        /
+                        <input type="number" name="month" placeholder="Month" />
+                        /
+                        <input type="number" name="year" placeholder="Year" />
+                      </li>
+                      <li>
+                          <span>Description</span>
+                          <textarea name="description" placeholder="Description"></textarea>
+                      </li>
+                      <li>
+                        <input type="submit" value="Save" />
+                        <input type="submit" value="Mark As Complete" />
+                      </li>
+                    </ul>
+                  </fieldset>
+                </form>
+              </div>
+              <img class="trash" src="assets/images/icon_trash.png" />
+            </label>
+          </li>
+          <li class="checked">
+            <img src="assets/images/icon_checked_box.png" alt="box" />
+            <label>
+              <input type="checkbox" name="todo_item5" />
+              Item 5
+              <div class="todo_update">
+                <form action="" method="post">
+                  <fieldset>
+                    <ul>
+                      <li>
+                        <label>
+                          Title
+                          <input type="text" name="title" value ="Item 5" />
+                        </label>
+                      </li>
+                      <li>
+                        Due Date
+                        <input type="number" name="day" value="16" />
+                        /
+                        <input type="number" name="month" placeholder="Month" />
+                        /
+                        <input type="number" name="year" placeholder="Year" />
+                      </li>
+                      <li>
+                          <span>Description</span>
+                          <textarea name="description" placeholder="Description"></textarea>
+                      </li>
+                      <li>
+                        <input type="submit" value="Save" />
+                        <input type="submit" value="Mark As Complete" />
+                      </li>
+                    </ul>
+                  </fieldset>
+                </form>
+              </div>
+              <img class="trash" src="assets/images/icon_trash.png" />
+            </label>
+          </li>
+          <li>
+            <img src="assets/images/icon_unchecked_box.png" alt="box" />
+            <label>
+              <input type="checkbox" name="todo_item6" />
+              Item 6
+              <div class="todo_update">
+                <form action="" method="post">
+                  <fieldset>
+                    <ul>
+                      <li>
+                        <label>
+                          Title
+                          <input type="text" name="title" value ="Item 6" />
+                        </label>
+                      </li>
+                      <li>
+                        Due Date
+                        <input type="number" name="day" value="16" />
+                        /
+                        <input type="number" name="month" placeholder="Month" />
+                        /
+                        <input type="number" name="year" placeholder="Year" />
+                      </li>
+                      <li>
+                          <span>Description</span>
+                          <textarea name="description" placeholder="Description"></textarea>
+                      </li>
+                      <li>
+                        <input type="submit" value="Save" />
+                        <input type="submit" value="Mark As Complete" />
+                      </li>
+                    </ul>
+                  </fieldset>
+                </form>
+              </div>
+              <img class="trash" src="assets/images/icon_trash.png" />
+            </label>
+          </li>
+          <li>
+            <img src="assets/images/icon_unchecked_box.png" alt="box" />
+            <label>
+              <input type="checkbox" name="todo_item7" />
+              Item 7
+              <div class="todo_update">
+                <form action="" method="post">
+                  <fieldset>
+                    <ul>
+                      <li>
+                        <label>
+                          Title
+                          <input type="text" name="title" value ="Item 7" />
+                        </label>
+                      </li>
+                      <li>
+                        Due Date
+                        <input type="number" name="day" value="16" />
+                        /
+                        <input type="number" name="month" placeholder="Month" />
+                        /
+                        <input type="number" name="year" placeholder="Year" />
+                      </li>
+                      <li>
+                          <span>Description</span>
+                          <textarea name="description" placeholder="Description"></textarea>
+                      </li>
+                      <li>
+                        <input type="submit" value="Save" />
+                        <input type="submit" value="Mark As Complete" />
+                      </li>
+                    </ul>
+                  </fieldset>
+                </form>
+              </div>
+              <img class="trash" src="assets/images/icon_trash.png" />
+            </label>
+          </li>
+          <li>
+            <img src="assets/images/icon_unchecked_box.png" alt="box" />
+            <label>
+              <input type="checkbox" name="todo_item8" />
+              Item 8
+              <div class="todo_update">
+                <form action="" method="post">
+                  <fieldset>
+                    <ul>
+                      <li>
+                        <label>
+                          Title
+                          <input type="text" name="title" value ="Item 8" />
+                        </label>
+                      </li>
+                      <li>
+                        Due Date
+                        <input type="number" name="day" value="16" />
+                        /
+                        <input type="number" name="month" placeholder="Month" />
+                        /
+                        <input type="number" name="year" placeholder="Year" />
+                      </li>
+                      <li>
+                          <span>Description</span>
+                          <textarea name="description" placeholder="Description"></textarea>
+                      </li>
+                      <li>
+                        <input type="submit" value="Save" />
+                        <input type="submit" value="Mark As Complete" />
+                      </li>
+                    </ul>
+                  </fieldset>
+                </form>
+              </div>
+              <img class="trash" src="assets/images/icon_trash.png" />
+            </label>
+          </li>
+          <li>
+            <img src="assets/images/icon_unchecked_box.png" alt="box" />
+            <label>
+              <input type="checkbox" name="todo_item9" />
+              Item 9
+              <div class="todo_update">
+                <form action="" method="post">
+                  <fieldset>
+                    <ul>
+                      <li>
+                        <label>
+                          Title
+                          <input type="text" name="title" value ="Item 9" />
+                        </label>
+                      </li>
+                      <li>
+                        Due Date
+                        <input type="number" name="day" value="16" />
+                        /
+                        <input type="number" name="month" placeholder="Month" />
+                        /
+                        <input type="number" name="year" placeholder="Year" />
+                      </li>
+                      <li>
+                          <span>Description</span>
+                          <textarea name="description" placeholder="Description"></textarea>
+                      </li>
+                      <li>
+                        <input type="submit" value="Save" />
+                        <input type="submit" value="Mark As Complete" />
+                      </li>
+                    </ul>
+                  </fieldset>
+                </form>
+              </div>
+              <img class="trash" src="assets/images/icon_trash.png" />
+            </label>
+          </li>
+        </ul>
+    </content>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+  <html lang="en-US">
+  <head>
+    <title>Todos</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/stylesheet/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="assets/javascripts/todos.js"></script>
+  </head>
+  <body>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle">
+        <img class="menu" src="assets/images/icon_menu.png" alt="Menu" />
+      </label>    
+      
+      <aside>
+        <ul id = "incomplete_todos">
+          <li class="all_todos active" data-block="a00">
+            <a href="#">
+              <h2>All Todos</h2>
+              <p>0</p>
+            </a>
+          </li>
+          <li data-block="i99">
+            <a href="#">  
+              No Due Date
+              <p>0</p>
+            </a>
+          </li>
+          <li data-block="i01">
+            <a href="#">  
+              01/16
+              <p>0</p>
+            </a>
+          </li>
+          <li data-block="i02">
+            <a href="#">
+              02/16
+              <p>0</p>
+            </a>
+          </li>
+          <li data-block="i03">
+            <a href="#">  
+              03/16
+              <p>0</p>
+            </a>
+          </li>
+          <li data-block="i04">
+            <a href="#">  
+              04/16
+              <p>0</p>
+            </a>
+          </li>
+          <li data-block="i05">
+            <a href="#">  
+              05/16
+              <p>0</p>
+            </a>
+          </li>
+          <li data-block="i06">
+            <a href="#">  
+              06/16
+              <p>0</p>
+            </a>
+          </li>
+          <li data-block="i07">
+            <a href="#">  
+              07/16
+              <p>0</p>
+            </a>
+          </li>
+          <li data-block="i08">
+            <a href="#">  
+              08/16
+              <p>0</p>
+            </a>
+          </li>
+          <li data-block="i09">
+            <a href="#">  
+              09/16
+              <p>0</p>
+            </a>
+          </li>
+          <li data-block="i10">
+            <a href="#">  
+              10/16
+              <p>0</p>
+            </a>
+          </li>
+          <li data-block="i11">
+            <a href="#">  
+              11/16
+              <p>0</p>
+            </a>
+          </li>
+          <li data-block="i12">
+            <a href="#">  
+              12/16
+              <p>0</p>
+            </a>
+          </li>
+        </ul>
+
+        <ul id = "completed_todos">
+          <li class="completed" data-block="f00">
+              <a href="#"><h2>Completed</h2></a>
+          </li>
+          <li data-block="f01">
+            <a href="#">01/16</a>
+          </li>
+          <li data-block="f02">
+            <a href="#">02/16</a>
+          </li>
+          <li data-block="f03">
+            <a href="#">03/16</a>
+          </li>
+          <li data-block="f04">
+            <a href="#">04/16</a>
+          </li>
+          <li data-block="f05">
+            <a href="#">05/16</a>
+          </li>
+          <li data-block="f06">
+            <a href="#">06/16</a>
+          </li>
+          <li data-block="f07">
+            <a href="#">07/16</a>
+          </li>
+          <li data-block="f08">
+            <a href="#">08/16</a>
+          </li>
+          <li data-block="f09">
+            <a href="#">09/16</a>
+          </li>
+          <li data-block="f10">
+            <a href="#">10/16</a>
+          </li>
+          <li data-block="f11">
+            <a href="#">11/16</a>
+          </li>
+          <li data-block="f12">
+            <a href="#">12/16</a>
+          </li>
+        </ul>
+      </aside>
+      <content>
+        <h1>All Todos</h1><span>0</span>
+        <h3>Add new to do</h3>
+        <ul class="list_items">
+          <script type="text/template" id="todo_item">
+            <li>
+              <input type="hidden" name="todo_id_ID" value="ID" />
+              <input type="checkbox" name="todo_checkbox_ID" />
+
+              <a href="">New Todo #ID</a>
+              <div class="todo_update">
+                <form action="" method="post">
+                  <fieldset>
+                    <ul>
+                      <li>
+                        <label>
+                          Title
+                          <input type="text" name="title_ID" value="New Todo #ID" />
+                        </label>
+                      </li>
+                      <li>
+                        Due Date
+                        <input type="number" name="month_ID" placeholder="1 ~ 12" min="1" max="12"/>
+                        /
+                          <input type="number" name="day_ID" placeholder="1 ~ 31" min="1" max="31" />
+                        /
+                        <input type="number" name="year_ID" placeholder="1900 ~ 2100" min="1900" max="2100" />
+                      </li>
+                      <li>
+                          <span>Description</span>
+                          <textarea name="description_ID" placeholder="Description"></textarea>
+                      </li>
+                      <li>
+                        <input type="submit" id="save_info" value="Save" />
+                        <input type="submit" id="mark_complete" value="Mark As Complete" />
+                      </li>
+                    </ul>
+                  </fieldset>
+                </form>
+              </div>
+              <div class="modal_layer"></div>
+              <img class="trash" src="assets/images/icon_trash.png" />
+            </li>
+          </script>
+        </ul>
+    </content>
+  </body>
+</html>

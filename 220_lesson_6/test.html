@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Inventory Order Form</title>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="javascripts/handlebars.js"></script>
+    <script src="javascripts/test.js"></script>
+  </head>
+  <body>
+    <main>
+    <script id="product_template" type="text/x-handlebars">
+  <li>
+    <h3>{{name}}</h3>
+    <dl>
+      <dt>Quantity:</dt>
+      <dd>{{quantity}}</dd>
+      <dt>Price:</dt>
+      <dd>
+        ${{price}}
+        {{#if on_sale}}
+        <strong>SALE!</strong>
+        {{/if}}
+      </dd>
+    </dl>
+  </li>
+</script>
+
+<script id="products_list" type="text/x-handlebars">
+  {{#each items}}
+  {{> product_template}}
+  {{/each}}
+</script>
+    </main>
+  </body>
+</html>

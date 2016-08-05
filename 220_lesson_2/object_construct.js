@@ -1,6 +1,6 @@
 function Vehicle() {
   if (!(this instanceof Vehicle)) {
-    return new Vehicle(0;)
+    return new Vehicle(0);
   }
   return this;
 }

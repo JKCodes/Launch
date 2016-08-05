@@ -8,6 +8,7 @@ body {
 
 aside {
   width: 335px;
+  min-height: 900px;
   float: left;
   background: #464f77;
   padding: 60px 0 225px 0;
